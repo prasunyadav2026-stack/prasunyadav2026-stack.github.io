@@ -131,13 +131,220 @@ About Us
 </a>
 
 </h2>
-     
+     <!-- ======================================= -->
+<!-- LOGIN SECTION -->
+<!-- ======================================= -->
+
+<div class="login-wrapper">
+
+<div class="login-card">
+
+<h2>👨‍🎓 Student Account</h2>
+
+<p class="login-subtitle">
+Login to access all mock tests and study resources
+</p>
+
+<input
+type="number"
+id="loginMobile"
+placeholder="📱 Mobile Number">
+
+<input
+type="password"
+id="loginPin"
+maxlength="4"
+placeholder="🔒 4 Digit PIN">
+
+<button id="loginBtn">
+Login
+</button>
+
+<div class="login-links">
+
+<span id="openRegister">
+New Student? Register
+</span>
+
+<a
+href="https://wa.me/YOURNUMBER"
+target="_blank">
+
+Forgot PIN?
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- REGISTER POPUP -->
+
+<div id="registerModal" class="register-modal">
+
+<div class="register-box">
+
+<span id="closeRegister">
+✖
+</span>
+
+<h2>Create Student Account</h2>
+
+<input
+type="text"
+id="regName"
+placeholder="Full Name">
+
+<input
+type="number"
+id="regMobile"
+placeholder="Mobile Number">
+
+<select id="regGender">
+
+<option value="">
+Select Gender
+</option>
+
+<option value="Male">
+Male
+</option>
+
+<option value="Female">
+Female
+</option>
+
+<option value="Other">
+Other
+</option>
+
+</select>
+
+<input
+type="password"
+id="regPin"
+maxlength="4"
+placeholder="Create 4 Digit PIN">
+
+<input
+type="password"
+id="regPin2"
+maxlength="4"
+placeholder="Confirm PIN">
+
+<button id="registerBtn">
+Create Account
+</button>
+
+</div>
+
+</div>
+<!-- PROFILE SECTION -->
+
+<div id="profileHeader" style="display:none;">
+
+    <div class="profile-top">
+
+        <div id="profileAvatar">
+            👤
+        </div>
+
+        <div class="profile-info">
+
+            <h2 id="welcomeName">
+                Welcome Student
+            </h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- PROFILE POPUP -->
+
+<div id="profileModal" class="profile-modal">
+
+    <div class="profile-box">
+
+        <span id="closeProfile">✖</span>
+
+        <h2>My Profile</h2>
+
+        <div class="profile-photo">
+
+            <img
+            id="profileImage"
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            width="120">
+
+        </div>
+
+        <input
+        type="file"
+        id="profilePhotoInput">
+
+        <hr>
+
+        <p>
+        Name :
+        <span id="profileName"></span>
+        </p>
+
+        <p>
+        Mobile :
+        <span id="profileMobile"></span>
+        </p>
+
+        <p>
+        Gender :
+        <span id="profileGender"></span>
+        </p>
+
+        <button id="logoutBtn">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+                <!-- STUDENT DASHBOARD -->
+
+                <div id="categoryDashboard" style="display:none;">
+
+                <h2>📚 Available Test Categories</h2>
+
+                <div id="categoryCards"></div>
+
+                <div id="testList"></div>
+
+                </div>
+
+                <!-- STUDENT FORM -->
+
+                <div id="testFormSection">
+
+
+
+
 
 
         <!-- ======================================= -->
         <!-- STUDENT FORM -->
         <!-- ======================================= -->
-
+<div id="testFormSection">
         <div class="student-form">
 
 
@@ -216,6 +423,7 @@ About Us
                 </select>
 
             </div>
+            
 
 
 
@@ -240,7 +448,7 @@ About Us
  </div>
 
         </div>
-
+</div>
 
             <!-- TEST INFO -->
 
@@ -599,10 +807,6 @@ style="display:none;">
         </section>
 
     </section>
-
-
-
-
 
     <!-- SCRIPT FILE -->
 
